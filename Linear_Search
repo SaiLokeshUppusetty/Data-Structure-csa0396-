@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+	int a[10],i,n,flag=0,ele;
+	printf("enter the no.of elements:");
+	scanf("%d",&n);
+	printf("enter the elements:");
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	printf("enter the key element to find:");
+	scanf("%d",&ele);
+	for(i=0;i<n;i++){
+		if(a[i]==ele){
+			flag=1;
+			break;
+		}
+	}
+	if(flag==1){
+		printf("element found");
+	}else{
+		printf("element not found");
+	}
+}
